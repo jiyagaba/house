@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+li {
+  list-style: none !important;
+  /* color: white !important; */
+}
+.find {
+  color: #ffffff;
+  font-family: "Aclonica";
+}
+.Nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.inner {
+  width: 80px;
+  color: white;
+  padding: 3px;
+  border-radius: 2px;
+  background: linear-gradient(
+    135deg,
+    rgb(2, 3, 129) 0%,
+    rgb(40, 116, 252) 100%
+  );
+}
+.innermain {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.zoom-on-hover:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+.zoom-on-hover {
+  transition: transform 0.3s ease-out;
+}
+.card {
+  text-align: center;
+  color: #e9767600;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #5f4c4c00 0%, #ffffff 100%);
+  border-color: #ffffff;
+}
+
+.scrollhider {
+  scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
+}
+.scrollhider::-webkit-scrollbar {
+  width: 0px; /* Adjust the width as needed */
+}
+
+.scrollhider::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.register {
+  background-image: linear-gradient(90deg, #ff6b25 0%, #d10909 100%);
+}
+
+.main .imageDiv img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition: 2s ease;
+}
+.main .imageDiv:hover img {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.main :hover {
+  transition: background-color 0.3s ease;
+}
+.main .imageDiv {
+  overflow: hidden;
+}
